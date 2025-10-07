@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Прометей AGI — Презентационный сайт
 
-## Getting Started
+Корпоративный сайт-презентация отечественной платформы искусственного интеллекта общего назначения.
 
-First, run the development server:
+## 🚀 Технологии
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** — App Router, Turbopack
+- **Tailwind CSS 4** — современная стилизация
+- **shadcn/ui** — компоненты интерфейса
+- **TypeScript** — типизация
+- **Русская локализация** — полная поддержка RU
+
+ 
+
+## 🏗️ Структура
+
+```
+src/
+├── app/                    # App Router страницы
+│   ├── page.tsx           # Главная презентация (7 слайдов)
+│   ├── platform/          # Архитектура и безопасность
+│   ├── models/            # Детальные карточки моделей
+│   ├── cases/             # Кейсы и отрасли
+│   ├── docs/              # Документация и PDF
+│   ├── contact/           # Форма обратной связи
+│   ├── press/             # Пресс-материалы
+│   └── legal/             # Юридические страницы
+├── components/            # React компоненты
+│   ├── slide.tsx          # Компонент слайда
+│   ├── slide-nav.tsx      # Навигация и прогресс
+│   ├── kpi-grid.tsx       # Сетка метрик
+│   ├── model-card.tsx     # Карточка модели
+│   └── footer.tsx         # Футер
+└── lib/
+    └── data.ts            # Данные (KPI, модели, контакты)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Запуск
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Установка зависимостей
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Запуск dev сервера
+npm run dev
 
-## Learn More
+# Сборка для продакшена
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Навигация
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Стрелки клавиатуры** — переключение слайдов
+- **Мобильное меню** — бургер-кнопка на малых экранах
+- **ROI Calculator** — интерактивные инвестиционные сценарии
+- **Прямые ссылки** — Telegram: [@MagistrTheOne](https://t.me/MagistrTheOne)
 
-## Deploy on Vercel
+## 🎨 Дизайн-система
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Цвета**: Чёрный фон, белый текст, синие акценты
+- **Типографика**: System fonts, крупные заголовки
+- **Компоненты**: Glass-эффекты, карточки, кнопки
+- **Адаптивность**: Мобильная навигация, responsive grid
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔒 Безопасность
+
+- **CSP заголовки** — Content Security Policy
+- **Security headers** — X-Frame-Options, X-Content-Type-Options
+- **ФЗ-152 соответствие** — обработка персональных данных
+- **Middleware защита** — автоматические заголовки безопасности
+
+## 👨‍💻 Разработчик
+
+**MagistrTheOne** — [Telegram](https://t.me/MagistrTheOne)
+
+Краснодар, 2025
