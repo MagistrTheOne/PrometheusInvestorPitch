@@ -64,10 +64,6 @@ export default function ContactPage() {
                 </a>
               </div>
               <div>
-                <h3 className="font-semibold">Email</h3>
-                <p className="text-muted-foreground">{contactInfo.email}</p>
-              </div>
-              <div>
                 <h3 className="font-semibold">Город разработки</h3>
                 <p className="text-muted-foreground">{contactInfo.address}</p>
               </div>

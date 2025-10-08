@@ -66,7 +66,6 @@ export const securityFeatures = [
 
 export const contactInfo = {
   telegram: "https://t.me/MagistrTheOne",
-  email: "contact@prometheus.example.ru",
   address: "Краснодар",
   responsible: "MagistrTheOne"
 };
